@@ -2,6 +2,7 @@
 .post {
   margin-bottom: 12vh;
   text-align: left;
+  padding: 0 1rem;
   h1 {
     text-align: center;
   }
@@ -9,16 +10,22 @@
   .post-time {
     text-align: center;
   }
-}
-.post-content {
-  padding: 24px 0;
-  img {
-    display: block;
-    width: 100%;
+
+  .post-content {
+    padding: 24px 0;
+    max-width: 800px;
     margin: auto;
-    max-width: 600px;
+    img {
+      display: block;
+      width: 100%;
+      margin: auto;
+      max-width: 600px;
+    }
   }
+
+
 }
+
 .post-head {
   background-color: $main-color;
   color: #fff;
