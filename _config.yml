@@ -18,21 +18,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: DojoConJapan 2020
-email: your-email@example.com
+title: DojoCon Japan 2020
+email: dojocon2020@coderdojo.jp
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  子供のためのプログラミング道場、 CoderDojo の日本最大の祭典、DojoCon Japan 2020 の公式サイトです。
+  DojoCon は、主に CoderDojo を支える運営者やメンターたちを対象にしたカンファレンスであり
+  CoderDojo の運営方法やノウハウの共有などに主眼が置かれています。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://koichi0702.github.io/dojocon2020" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dojocon2020.coderdojo.jp" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dojoconjapan
 github_username:  
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /:categories/:title.html
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,14 +48,14 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
